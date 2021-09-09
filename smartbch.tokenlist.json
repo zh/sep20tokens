@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-09T07:23:52.046Z",
+  "timestamp": "2021-09-09T09:32:28.973Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 4
+    "patch": 5
   },
   "tags": {},
   "logoURI": "https://smartbch.org/_nuxt/img/logo-white-large.73f49c5.png",
@@ -22,12 +22,36 @@
       "logoURI": "https://via.placeholder.com/32.png"
     },
     {
+      "name": "ART Token",
+      "address": "0x7855101ABC103C1F1aa0A8e5402C48678d0bd20C",
+      "symbol": "ART",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://ipfs.io/ipfs/QmZx3XHnkYmaEGrpMgvzRjUcKXnmvNdqpYz9h9ySTwFDGm"
+    },
+    {
+      "name": "Awesome Token",
+      "address": "0xc624d2bb7c9a27eb76919cda82d1748df2c7cab1",
+      "symbol": "AWE",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://ipfs.io/ipfs/QmVU6Lr6BmQyJ1Jq94bvttejYFCUUYoFAjt6iwWPpgaU6X"
+    },
+    {
       "name": "Green Ben",
       "address": "0x77CB87b57F54667978Eb1B199b28a0db8C8E1c0B",
       "symbol": "EBEN",
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://benswap.cash/images/ben/EBEN64x64.png"
+    },
+    {
+      "name": "Falcon Token",
+      "address": "0x7040d89f8111dee9d768f9d282cdd97fe5a4daa8",
+      "symbol": "FLCT",
+      "decimals": 0,
+      "chainId": 10000,
+      "logoURI": "https://ipfs.io/ipfs/QmSzJtStHGm3W1p4ALJcPutwYyaLQHpi2mSQ9mHDH37xry"
     },
     {
       "name": "HONK",
@@ -52,6 +76,22 @@
       "decimals": 2,
       "chainId": 10000,
       "logoURI": "https://via.placeholder.com/32.png"
+    },
+    {
+      "name": "Scaffold Token",
+      "address": "0x836d1b6F07daD45bD6C870c24a4B32B78fDDDd34",
+      "symbol": "SCF",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://ipfs.io/ipfs/QmQoMmjEGsGABRotkXkf59FJ9WAwZS5P3CTR8x8EQLpKui"
+    },
+    {
+      "name": "sVNT Token",
+      "address": "0x8f66C730e383Bb412a9a3cB58178BAb2f432d194",
+      "symbol": "sVNT",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://ipfs.io/ipfs/QmfPoxtMSidHkVe1ShGn7zhxrMT28S5G8bNPZD3MFQz5hM"
     },
     {
       "name": "VANDALS",
