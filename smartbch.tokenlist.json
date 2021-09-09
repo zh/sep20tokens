@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-09T09:32:28.973Z",
+  "timestamp": "2021-09-09T10:29:05.310Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 5
+    "patch": 6
   },
   "tags": {},
   "logoURI": "https://smartbch.org/_nuxt/img/logo-white-large.73f49c5.png",
@@ -20,6 +20,22 @@
       "decimals": 2,
       "chainId": 10000,
       "logoURI": "https://via.placeholder.com/32.png"
+    },
+    {
+      "name": "HAM Token",
+      "address": "0x252fd94f3Fb53D3D62F4FEc708501ACd59A57e52",
+      "symbol": "$HAM",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://abs-0.twimg.com/emoji/v2/svg/1f4e1.svg"
+    },
+    {
+      "name": "WRS Token",
+      "address": "0x445B3712A09f8102Dd0c1ffb6B3b0dE4D3B643b7",
+      "symbol": "$WRS",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://abs-0.twimg.com/emoji/v2/svg/1f4f6.svg"
     },
     {
       "name": "ART Token",
