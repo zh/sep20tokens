@@ -1,0 +1,29 @@
+table {
+  margin: auto;
+  border-spacing: 8px;
+  border-collapse: collapse;
+}
+td, th  {
+  padding: 6px;
+}
+tr:hover {
+  background-color: grey;
+}
+.header {
+  border: 1pt solid black;
+}
+.normal {
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+  font-size: 24px;
+}
+.symbol {
+  text-decoration: none;
+}
+.copy {
+  cursor: grab;
+}
+.number {
+  text-align: right;
+}

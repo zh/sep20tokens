@@ -3,28 +3,31 @@
 <head>
 <title>SEP20 Tokens</title>
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="./styles.css">
 <script>
-async function add(tokenAddress, symbol, decimals, image = undefined) {
+async function tokenAdd(address, symbol, decimals, image) {
   if (typeof window.ethereum === 'undefined') {
-    alert("Your browser does not have a wallet plugin")
+    alert("Your browser does not have a wallet plugin");
     return
   } else {
-    window.ethereum.enable()
+    window.ethereum.enable();
   }
   try {
     // wasAdded is a boolean. Like any RPC method, an error may be thrown.
-    const wasAdded = await ethereum.request({
-      method: 'wallet_watchAsset',
-      params: {
-        type: 'ERC20',
-        options: {
-	  address: tokenAddress,
-	  symbol: symbol,
-	  decimals: decimals,
-    image
-	},
-      },
-    });
+    const wasAdded = await ethereum.request(
+      {
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address,
+            symbol,
+            decimals,
+            image
+          },
+        },
+      }
+    );
   
     if (wasAdded) {
       alert('Succeed to add the token at '+tokenAddress);
@@ -36,48 +39,60 @@ async function add(tokenAddress, symbol, decimals, image = undefined) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", async function(){
-  var resp = await fetch("./tokens.json")
-  var tokens = await resp.json()
-  var keys = Object.keys(tokens)
-  keys.sort()
-  var strList = []
-  for(let key of keys) {
-    if(key.length == 0) {
-      continue
-    }
-    var value = tokens[key]
-    var addr = value[0]
-    var decimals = value[1]
-    var url = value[2]
-    var image = value.length>3?value[3]:"";
-    strList.push('<tr><td><a href="'+url+'" target="_blank">'+key+'</a></td>')
-    strList.push('<td><code>'+addr+'</code>')
-    strList.push('<button title="Copy this address to the clipboard" onclick="navigator.clipboard.writeText(\''+addr+'\')">copy</button></td>')
-    strList.push('<td><a title="View this address in the browser" href="https://www.smartscan.cash/address/'+addr+'"  target="_blank">View</a></td>')
-    strList.push('<td><a title="Add this asset to your wallet" href="javascript:add(\''+addr+'\',\''+key+'\','+decimals+',\''+image+'\')">Add</a></td></tr>')
+document.addEventListener("DOMContentLoaded", async function() {
+  const explorerUrl = 'https://www.smartscan.cash/address/';
+  const mainnet = 10000;
+  const testnet = 10001;
+  const mainnetList = ['<tr class="header"><th>Logo</th><th>Symbol</th><th>Address</th><th>Decimals</th><th>&nbsp;</th></tr>'];
+  const testnetList = ['<tr class="header"><th>Logo</th><th>Symbol</th><th>Address</th><th>Decimals</th><th>&nbsp;</th></tr>'];
+  let tokensObj = {};
+  try {
+    const resp = await fetch("./smartbch.tokenlist.json");
+    tokensObj = await resp.json();
+  }  catch(e) {
+    console.log(e);
   }
-  document.getElementById('tokenTbl').innerHTML=strList.join("")
+
+  if (tokensObj.tokens && tokensObj.tokens.length > 0) {
+    tokensObj.tokens.map(t => {
+      const logoUri = '<img src="'+t.logoURI+'" width="32" height="32" />';
+      const addToWallet = 'javascript:tokenAdd(\''+t.address+'\',\''+t.symbol+'\','+t.decimals+',\''+t.logoURI+'\')"';
+      if (t.chainId === mainnet) {
+        mainnetList.push('<tr><td>'+logoUri+'</td><td><a class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
+        mainnetList.push('<td><span class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
+        mainnetList.push('<td class="number">'+t.decimals+'</td>');
+        mainnetList.push('<td><a title="Add this asset to your wallet" href="'+addToWallet+'">Add</a></td></tr>');
+      }
+      if (t.chainId === testnet) {
+        testnetList.push('<tr><td>'+logoUri+'</td><td><a class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
+        testnetList.push('<td><span class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
+        testnetList.push('<td class="number">'+t.decimals+'</td>');
+        testnetList.push('<td><a title="Add this asset to your wallet" href="'+addToWallet+'">Add</a></td></tr>');
+      }
+    });
+  }
+
+  document.getElementById('mainnetTokenTbl').innerHTML=mainnetList.join("");
+  document.getElementById('testnetTokenTbl').innerHTML=testnetList.join("");
 });
-    
 </script>
-<style>
-table { border-spacing: 15px; }
-.normal {
-   width: 1000px;
-   margin: auto;
-   text-align: left;
-   font-size: 24px;
-}
-</style>
 </head>
 <body>
 <div class="normal">
 <h1 style="text-align: center;">SEP20 Tokens</h1>
 <p>Here are some known SEP20 tokens on smartBCH. You can view these tokens in the <a href="https://www.smartscan.cash">browser</a>, or add them to your wallet plugin as an asset to watch.</p>
-<p>You can also view some known DApps' addresses <a href="app.html">here</a>.</p>
-<table style="margin: auto" id="tokenTbl">
-</table>
+
+<p>
+<h2 style="text-align: center;">Mainnet SEP20 Tokens</h2>
+<table id="mainnetTokenTbl"></table>
+</p>
+
+<p>
+<h2 style="text-align: center;">Testnet (Amber) SEP20 Tokens</h2>
+<table id="testnetTokenTbl"></table>
+</p>
+
+<p>You can also view some <a href="app.html">known DApps' addresses</a>.</p>
 </div>
 </body>
 </html>

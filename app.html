@@ -3,37 +3,32 @@
 <head>
 <title>DApp Addresses</title>
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="./styles.css">
 <script>
-document.addEventListener("DOMContentLoaded", async function(){
-  var resp = await fetch("./apps.json")
-  var apps = await resp.json()
-  var keys = Object.keys(apps)
+document.addEventListener("DOMContentLoaded", async function() {
+  let apps = [];
+  try {
+    const resp = await fetch("./apps.json")
+    apps = await resp.json()
+  } catch(e) {
+    console.log(e);
+  }
+  const keys = Object.keys(apps)
   keys.sort()
-  var strList = []
+  const strList = ['<tr class="header"><th>URL</th><th>Address</th><th>&nbsp;</th></tr>'];
   for(let key of keys) {
     if(key.length == 0) {
       continue
     }
-    var value = apps[key]
-    var addr = value[0]
-    var url = value[1]
+    const value = apps[key]
+    const addr = value[0]
+    const url = value[1]
     strList.push('<tr><td><a href="'+url+'" target="_blank">'+key+'</a></td>')
-    strList.push('<td><code>'+addr+'</code>')
-    strList.push('<button title="Copy this address to the clipboard" onclick="navigator.clipboard.writeText(\''+addr+'\')">copy</button></td></tr>')
+    strList.push('<td><span class="copy" onclick="navigator.clipboard.writeText(\''+addr+'\')"><code>'+addr+'</code></span></td>');
   }
-  document.getElementById('appTbl').innerHTML=strList.join("")
-});
-    
+  document.getElementById('appTbl').innerHTML=strList.join("");
+});  
 </script>
-<style>
-table { border-spacing: 15px; }
-.normal {
-   width: 1000px;
-   margin: auto;
-   text-align: left;
-   font-size: 24px;
-}
-</style>
 </head>
 <body>
 <div class="normal">
@@ -41,6 +36,9 @@ table { border-spacing: 15px; }
 <p>Here are some known DApp's addresses on smartBCH.</p>
 <table style="margin: auto" id="appTbl">
 </table>
+<p>You can also view some <a href="index.html">known SEP20 tokens on smartBCH</a>.
+  You can view these tokens in the <a href="https://www.smartscan.cash">browser</a>,
+  or add them to your wallet plugin as an asset to watch.</p>
 </div>
 </body>
 </html>
