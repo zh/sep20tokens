@@ -67,14 +67,14 @@ document.addEventListener("DOMContentLoaded", async function() {
       const logoUri = '<img src="'+t.logoURI+'" width="32" height="32" />';
       const addToWallet = 'javascript:tokenAdd(\''+t.address+'\',\''+t.symbol+'\','+t.decimals+',\''+t.logoURI+'\')"';
       if (t.chainId === mainnet) {
-        mainnetList.push('<tr><td>'+logoUri+'</td><td><a class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
-        mainnetList.push('<td><span class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
+        mainnetList.push('<tr><td>'+logoUri+'</td><td><a title="'+t.name+'" class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
+        mainnetList.push('<td><span title="click to copy" class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
         mainnetList.push('<td class="number">'+t.decimals+'</td>');
         mainnetList.push('<td><a title="Add this asset to your wallet" href="'+addToWallet+'">Add</a></td></tr>');
       }
       if (t.chainId === testnet) {
-        testnetList.push('<tr><td>'+logoUri+'</td><td><a class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
-        testnetList.push('<td><span class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
+        testnetList.push('<tr><td>'+logoUri+'</td><td><a title="'+t.name+'" class="symbol" href="'+explorerUrl+t.address+'" target="_blank">'+t.symbol+'</a></td>');
+        testnetList.push('<td><span title="click to copy" class="copy" onclick="navigator.clipboard.writeText(\''+t.address+'\')"><code>'+t.address+'</code></span></td>');
         testnetList.push('<td class="number">'+t.decimals+'</td>');
         testnetList.push('<td><a title="Add this asset to your wallet" href="'+addToWallet+'">Add</a></td></tr>');
       }
