@@ -53,6 +53,15 @@ document.addEventListener("DOMContentLoaded", async function() {
     console.log(e);
   }
 
+  if (tokensObj.timestamp) {
+    document.getElementById('listTimestamp').innerHTML = '<code>'+tokensObj.timestamp+'</code>';
+  }
+
+  if (tokensObj.version) {
+    const version = tokensObj.version.major+'.'+tokensObj.version.minor+'.'+tokensObj.version.patch;
+    document.getElementById('listVersion').innerHTML = '<code>'+version+'</code>';
+  }
+
   if (tokensObj.tokens && tokensObj.tokens.length > 0) {
     tokensObj.tokens.map(t => {
       const logoUri = '<img src="'+t.logoURI+'" width="32" height="32" />';
@@ -72,8 +81,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     });
   }
 
-  document.getElementById('mainnetTokenTbl').innerHTML=mainnetList.join("");
-  document.getElementById('testnetTokenTbl').innerHTML=testnetList.join("");
+  document.getElementById('mainnetTokenTbl').innerHTML = mainnetList.join("");
+  document.getElementById('testnetTokenTbl').innerHTML = testnetList.join("");
 });
 </script>
 </head>
@@ -81,6 +90,12 @@ document.addEventListener("DOMContentLoaded", async function() {
 <div class="normal">
 <h1 style="text-align: center;">SEP20 Tokens</h1>
 <p>Here are some known SEP20 tokens on smartBCH. You can view these tokens in the <a href="https://www.smartscan.cash">browser</a>, or add them to your wallet plugin as an asset to watch.</p>
+
+<b>Token List</b>:<br/>
+<ul>
+  <li>Version: <span id="listVersion"></span></li>
+  <li>Created: <span id="listTimestamp"></span></li>
+</ul>
 
 <p>
 <h2 style="text-align: center;">Mainnet SEP20 Tokens</h2>
