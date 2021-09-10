@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-09T12:07:05.138Z",
+  "timestamp": "2021-09-10T03:35:05.419Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 8
+    "patch": 9
   },
   "tags": {},
   "logoURI": "https://smartbch.org/_nuxt/img/logo-white-large.73f49c5.png",
@@ -179,7 +179,7 @@
       "symbol": "VANDALS",
       "decimals": 8,
       "chainId": 10000,
-      "logoURI": "https://ipfs.io/ipfs/QmS5h8oS4bCvXbGA7F19w7mkMZuTn6yoVgwXcFbC53V8ih"
+      "logoURI": "https://gateway.pinata.cloud/ipfs/QmR1nxmvGsxMQgDsZdNN6tc4WDVSRQnqnTPSuQjPQwNa1Z"
     },
     {
       "name": "ZOMBIE",
