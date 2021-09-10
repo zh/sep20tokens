@@ -1,13 +1,13 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-10T03:35:05.419Z",
+  "timestamp": "2021-09-10T03:40:32.186Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 9
+    "patch": 10
   },
   "tags": {},
-  "logoURI": "https://smartbch.org/_nuxt/img/logo-white-large.73f49c5.png",
+  "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
   "keywords": [
     "smartbch",
     "sep20"
