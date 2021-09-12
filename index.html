@@ -5,13 +5,63 @@
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <link rel="stylesheet" href="./styles.css">
 <script>
-async function tokenAdd(address, symbol, decimals, image) {
+function enableEthereum() {
   if (typeof window.ethereum === 'undefined') {
     alert("Your browser does not have a wallet plugin");
     return
   } else {
     window.ethereum.enable();
   }
+}
+
+async function smartBCHAdd(mainnet = true) {
+  enableEthereum();
+  const chainId = mainnet ? '0x2710' : '0x2711';
+  const chainName = mainnet ? 'SmartBCH Mainnet' : 'SmartBCH Testnet';
+  let rpcUrls;
+  if (mainnet) {
+    rpcUrls = [
+      "https://global.uat.cash",
+      "https://smartbch.greyh.at",
+      "https://smartbch.fountainhead.cash/mainnet:8545",
+      "https://rpc.uatvo.com:8545"
+    ];
+  } else {
+    rpcUrls = ["https://moeing.tech:9545", "http://35.220.203.194:8545"];
+  }
+  try {
+  await window.ethereum.request({
+    method: 'wallet_switchEthereumChain',
+    params: [{ chainId }],
+  });
+} catch (switchError) {
+  // This error code indicates that the chain has not been added to MetaMask.
+  if (switchError.code === 4902) {
+    try {
+      await window.ethereum.request({
+        method: 'wallet_addEthereumChain',
+        params: [{
+          chainId,
+          chainName,
+          blockExplorerUrls: ['https://www.smartscan.cash/'],
+          rpcUrls,
+          nativeCurrency: {
+            name: 'BCH',
+            symbol: 'BCH',
+            decimals: 18,
+          },
+        }],
+      });
+    } catch (addError) {
+      // handle "add" error
+    }
+  }
+  // handle other "switch" errors
+}
+}
+
+async function tokenAdd(address, symbol, decimals, image) {
+  enableEthereum();
   try {
     // wasAdded is a boolean. Like any RPC method, an error may be thrown.
     const wasAdded = await ethereum.request(
@@ -97,6 +147,17 @@ document.addEventListener("DOMContentLoaded", async function() {
   <li>Version: <span id="listVersion"></span></li>
   <li>Created: <span id="listTimestamp"></span></li>
 </ul>
+
+<p>
+<h2 style="text-align: center;">SmartBCH mainnet and testnet blockchains</h2>
+
+To send and receive SEP-20 tokens you need first to add the proper blockchain
+to your Memamask wallet.
+<ul>
+  <li>Add <a href="javascript:smartBCHAdd();">SmartBCH mainnet</a> blockchain</li>
+  <li>Add <a href="javascript:smartBCHAdd(false);">SmartBCH testnet</a> blockchain</li>
+</ul>
+</p>
 
 <p>
 <h2 style="text-align: center;">Mainnet SEP20 Tokens</h2>
