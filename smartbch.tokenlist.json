@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-10T03:40:32.186Z",
+  "timestamp": "2021-09-13T01:55:53.138Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 10
+    "patch": 11
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -28,6 +28,14 @@
       "decimals": 8,
       "chainId": 10000,
       "logoURI": "https://abs-0.twimg.com/emoji/v2/svg/1f4e1.svg"
+    },
+    {
+      "name": "CashKitten",
+      "address": "0x7ebeadb95724a006afaf2f1f051b13f4ebebf711",
+      "symbol": "$KITTEN",
+      "decimals": 2,
+      "chainId": 10000,
+      "logoURI": "https://cashkitten.org/wp-content/uploads/2021/09/1631300627950.png"
     },
     {
       "name": "WRS Token",
