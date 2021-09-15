@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-13T01:55:53.138Z",
+  "timestamp": "2021-09-15T11:17:20.844Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 11
+    "patch": 12
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -70,6 +70,14 @@
       "logoURI": "https://ipfs.io/ipfs/QmVU6Lr6BmQyJ1Jq94bvttejYFCUUYoFAjt6iwWPpgaU6X"
     },
     {
+      "name": "CandyMan",
+      "address": "0x0D8b355f9CEDeB612f2df4B39CdD87059A244567",
+      "symbol": "CandyMan",
+      "decimals": 2,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/candyman.png"
+    },
+    {
       "name": "Green Ben",
       "address": "0x77CB87b57F54667978Eb1B199b28a0db8C8E1c0B",
       "symbol": "EBEN",
@@ -83,7 +91,15 @@
       "symbol": "FLCT",
       "decimals": 0,
       "chainId": 10000,
-      "logoURI": "https://ipfs.io/ipfs/QmSzJtStHGm3W1p4ALJcPutwYyaLQHpi2mSQ9mHDH37xry"
+      "logoURI": "https://zh.thedev.id/sep20tokens/assets/falcon.png"
+    },
+    {
+      "name": "flexUSD",
+      "address": "0x7b2B3C5308ab5b2a1d9a94d20D35CCDf61e05b72",
+      "symbol": "flexUSD",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://s3.ap-northeast-1.amazonaws.com/flexusd.com/wp-content/uploads/20201117112615/flexusd.png"
     },
     {
       "name": "HODL",
@@ -126,6 +142,14 @@
       "logoURI": "https://ipfs.io/ipfs/QmQhEHRbxsFvSxaBFhSUD92z3WQNSYxfW9iFJmYBWRR2JL"
     },
     {
+      "name": "MGOT",
+      "address": "0x7DF65F158126898725f262378538B60db543C11A",
+      "symbol": "MGOT",
+      "decimals": 2,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/mgot.png"
+    },
+    {
       "name": "ORB",
       "address": "0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e",
       "symbol": "ORB",
@@ -155,7 +179,15 @@
       "symbol": "SCF",
       "decimals": 18,
       "chainId": 10000,
-      "logoURI": "https://ipfs.io/ipfs/QmQoMmjEGsGABRotkXkf59FJ9WAwZS5P3CTR8x8EQLpKui"
+      "logoURI": "https://zh.thedev.id/sep20tokens/assets/scaffold.png"
+    },
+    {
+      "name": "ShibaCash",
+      "address": "0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9",
+      "symbol": "Shiba",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/shibbch.png"
     },
     {
       "name": "SPICE",
@@ -211,7 +243,7 @@
       "symbol": "SCF",
       "decimals": 18,
       "chainId": 10001,
-      "logoURI": "https://ipfs.io/ipfs/QmQoMmjEGsGABRotkXkf59FJ9WAwZS5P3CTR8x8EQLpKui"
+      "logoURI": "https://zh.thedev.id/sep20tokens/assets/scaffold.png"
     }
   ]
 }

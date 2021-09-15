@@ -4,7 +4,12 @@
 <title>SEP20 Tokens</title>
 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <link rel="stylesheet" href="./styles.css">
+<script src="assets/web3.min.js"></script>
+<script src="assets/abi.js"></script>
 <script>
+const web3 = new Web3(Web3.givenProvider || 'https://global.uat.cash');
+const explorerUrl = 'https://www.smartscan.cash/address/';
+
 function enableEthereum() {
   if (typeof window.ethereum === 'undefined') {
     alert("Your browser does not have a wallet plugin");
@@ -12,6 +17,24 @@ function enableEthereum() {
   } else {
     window.ethereum.enable();
   }
+}
+
+async function getTokenInfo() {
+  enableEthereum();
+  const address = document.getElementById('token-address').value;
+  if (address === "") return;
+
+  const contract = new web3.eth.Contract(abi, address);
+
+  contract.methods.name().call((err, result) => {
+    document.getElementById('tokenName').innerHTML = '<li>Name: '+result+'</li>';
+  });
+  contract.methods.symbol().call((err, result) => {
+    document.getElementById('tokenSymbol').innerHTML = '<li>Symbol: <a href="'+explorerUrl+address+'" target="_blank">'+result+'</a></li>';
+  });
+  contract.methods.decimals().call((err, result) => {
+    document.getElementById('tokenDecimals').innerHTML = '<li>Decimals: '+result+'</li>';
+  });
 }
 
 async function smartBCHAdd(mainnet = true) {
@@ -90,7 +113,6 @@ async function tokenAdd(address, symbol, decimals, image) {
 }
 
 document.addEventListener("DOMContentLoaded", async function() {
-  const explorerUrl = 'https://www.smartscan.cash/address/';
   const mainnet = 10000;
   const testnet = 10001;
   const mainnetList = ['<tr class="header"><th>Logo</th><th>Symbol</th><th>Address</th><th>Decimals</th><th>&nbsp;</th></tr>'];
@@ -158,6 +180,19 @@ to your Metamask wallet.
   <li>Add <a href="javascript:smartBCHAdd(false);">SmartBCH testnet</a> blockchain</li>
 </ul>
 </p>
+
+<p>
+<h2 style="text-align: center;">Get token information by address</h2>
+Address (0x....):
+<input type="text" maxlength="128" size="64" id="token-address" />
+<a href="javascript:getTokenInfo();">Get Info</a>
+<ul>
+  <span id="tokenName"></span>
+  <span id="tokenSymbol"></span>
+  <span id="tokenDecimals"></span>
+</ul>
+</p>
+
 
 <p>
 <h2 style="text-align: center;">Mainnet SEP20 Tokens</h2>
