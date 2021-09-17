@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-15T11:17:20.844Z",
+  "timestamp": "2021-09-17T04:56:01.231Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 12
+    "patch": 13
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -27,7 +27,7 @@
       "symbol": "$HAM",
       "decimals": 8,
       "chainId": 10000,
-      "logoURI": "https://abs-0.twimg.com/emoji/v2/svg/1f4e1.svg"
+      "logoURI": "https://www.marketcap.cash/ham.png"
     },
     {
       "name": "CashKitten",
@@ -43,7 +43,7 @@
       "symbol": "$WRS",
       "decimals": 6,
       "chainId": 10000,
-      "logoURI": "https://abs-0.twimg.com/emoji/v2/svg/1f4f6.svg"
+      "logoURI": "https://www.marketcap.cash/thewirelesstoken.png"
     },
     {
       "name": "Bitcoin Cash Argentina",
@@ -94,6 +94,14 @@
       "logoURI": "https://zh.thedev.id/sep20tokens/assets/falcon.png"
     },
     {
+      "name": "FLEX Coin",
+      "address": "0x98Dd7eC28FB43b3C4c770AE532417015fa939Dd3",
+      "symbol": "FLEX",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/flex.png"
+    },
+    {
       "name": "flexUSD",
       "address": "0x7b2B3C5308ab5b2a1d9a94d20D35CCDf61e05b72",
       "symbol": "flexUSD",
@@ -140,6 +148,14 @@
       "decimals": 6,
       "chainId": 10000,
       "logoURI": "https://ipfs.io/ipfs/QmQhEHRbxsFvSxaBFhSUD92z3WQNSYxfW9iFJmYBWRR2JL"
+    },
+    {
+      "name": "MonkeyCash",
+      "address": "0x778C1c04D68c74FfdECBc0950d51033699c8Eb0B",
+      "symbol": "MCASH",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/monkeycash.jpeg"
     },
     {
       "name": "MGOT",
