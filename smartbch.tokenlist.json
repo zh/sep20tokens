@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-17T04:56:01.231Z",
+  "timestamp": "2021-09-22T08:11:43.071Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 13
+    "patch": 14
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -68,6 +68,14 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://ipfs.io/ipfs/QmVU6Lr6BmQyJ1Jq94bvttejYFCUUYoFAjt6iwWPpgaU6X"
+    },
+    {
+      "name": "AxieBCH",
+      "address": "0x3d13DaFcCA3a188DB340c81414239Bc2be312Ec9",
+      "symbol": "AXIEBCH",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/axiebch.png"
     },
     {
       "name": "CandyMan",
@@ -148,14 +156,6 @@
       "decimals": 6,
       "chainId": 10000,
       "logoURI": "https://ipfs.io/ipfs/QmQhEHRbxsFvSxaBFhSUD92z3WQNSYxfW9iFJmYBWRR2JL"
-    },
-    {
-      "name": "MonkeyCash",
-      "address": "0x778C1c04D68c74FfdECBc0950d51033699c8Eb0B",
-      "symbol": "MCASH",
-      "decimals": 18,
-      "chainId": 10000,
-      "logoURI": "https://www.marketcap.cash/monkeycash.jpeg"
     },
     {
       "name": "MGOT",
