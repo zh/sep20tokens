@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-09-22T08:11:43.071Z",
+  "timestamp": "2021-10-05T14:24:05.211Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 14
+    "patch": 15
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -22,28 +22,12 @@
       "logoURI": "https://www.marketcap.cash/cashcats.jpg"
     },
     {
-      "name": "HAM Token",
-      "address": "0x252fd94f3Fb53D3D62F4FEc708501ACd59A57e52",
-      "symbol": "$HAM",
-      "decimals": 8,
-      "chainId": 10000,
-      "logoURI": "https://www.marketcap.cash/ham.png"
-    },
-    {
       "name": "CashKitten",
       "address": "0x7ebeadb95724a006afaf2f1f051b13f4ebebf711",
       "symbol": "$KITTEN",
       "decimals": 2,
       "chainId": 10000,
       "logoURI": "https://cashkitten.org/wp-content/uploads/2021/09/1631300627950.png"
-    },
-    {
-      "name": "WRS Token",
-      "address": "0x445B3712A09f8102Dd0c1ffb6B3b0dE4D3B643b7",
-      "symbol": "$WRS",
-      "decimals": 6,
-      "chainId": 10000,
-      "logoURI": "https://www.marketcap.cash/thewirelesstoken.png"
     },
     {
       "name": "Bitcoin Cash Argentina",
@@ -118,6 +102,14 @@
       "logoURI": "https://s3.ap-northeast-1.amazonaws.com/flexusd.com/wp-content/uploads/20201117112615/flexusd.png"
     },
     {
+      "name": "HAM Token",
+      "address": "0x252fd94f3Fb53D3D62F4FEc708501ACd59A57e52",
+      "symbol": "HAM",
+      "decimals": 8,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/ham.png"
+    },
+    {
       "name": "HODL",
       "address": "0xB24D7763516bca9656779d760be9a32490f46E27",
       "symbol": "HODL",
@@ -140,6 +132,14 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/knuth.jpg"
+    },
+    {
+      "name": "LAWTOKEN",
+      "address": "0x0b00366fBF7037E9d75E4A569ab27dAB84759302",
+      "symbol": "LAW",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/law.png"
     },
     {
       "name": "Lightning",
@@ -166,6 +166,14 @@
       "logoURI": "https://www.marketcap.cash/mgot.png"
     },
     {
+      "name": "MistToken",
+      "address": "0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129",
+      "symbol": "MIST",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/mist.jpeg"
+    },
+    {
       "name": "ORB",
       "address": "0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e",
       "symbol": "ORB",
@@ -180,6 +188,14 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/alpha.png"
+    },
+    {
+      "name": "Potato",
+      "address": "0xb5b1939ef0a3743d0ae9282dba62312b614a5ac0",
+      "symbol": "POTA",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/pota.png"
     },
     {
       "name": "Smart BUSD",
@@ -236,6 +252,14 @@
       "decimals": 8,
       "chainId": 10000,
       "logoURI": "https://gateway.pinata.cloud/ipfs/QmR1nxmvGsxMQgDsZdNN6tc4WDVSRQnqnTPSuQjPQwNa1Z"
+    },
+    {
+      "name": "WRS Token",
+      "address": "0x445B3712A09f8102Dd0c1ffb6B3b0dE4D3B643b7",
+      "symbol": "WRS",
+      "decimals": 6,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/thewirelesstoken.png"
     },
     {
       "name": "ZOMBIE",
