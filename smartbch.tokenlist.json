@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-10-05T14:24:05.211Z",
+  "timestamp": "2021-10-12T11:36:26.139Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 15
+    "patch": 16
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -268,6 +268,14 @@
       "decimals": 0,
       "chainId": 10000,
       "logoURI": "https://ipfs.io/ipfs/QmSFyejP46jhvgVHW9gTEYT8NBfaF8RYfzL4GLVM75xJfq"
+    },
+    {
+      "name": "AMM Token",
+      "address": "0x9E06bF2B60f42e5bA8E0c9BDfB2242924d09fD78",
+      "symbol": "AMM",
+      "decimals": 18,
+      "chainId": 10001,
+      "logoURI": "https://zh.thedev.id/sep20tokens/assets/scales.png"
     },
     {
       "name": "Art Token",
