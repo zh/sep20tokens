@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-10-12T11:36:26.139Z",
+  "timestamp": "2021-10-25T05:14:50.376Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 16
+    "patch": 17
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -62,12 +62,36 @@
       "logoURI": "https://www.marketcap.cash/axiebch.png"
     },
     {
+      "name": "BCHPad",
+      "address": "0x9192940099fDB2338B928DE2cad9Cd1525fEa881",
+      "symbol": "BPAD",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/pota.png"
+    },
+    {
       "name": "CandyMan",
       "address": "0x0D8b355f9CEDeB612f2df4B39CdD87059A244567",
       "symbol": "CandyMan",
       "decimals": 2,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/candyman.png"
+    },
+    {
+      "name": "Cheese",
+      "address": "0x09A4CDb1569563fF277aC457cED35fe2551aEC1D",
+      "symbol": "CHEESE",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/cheese.png"
+    },
+    {
+      "name": "Celery",
+      "address": "0x7642Df81b5BEAeEb331cc5A104bd13Ba68c34B91",
+      "symbol": "CLY",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/cly.png"
     },
     {
       "name": "Green Ben",
@@ -126,12 +150,28 @@
       "logoURI": "https://www.marketcap.cash/honk.png"
     },
     {
+      "name": "Joystick",
+      "address": "0x6732E55Ac3ECa734F54C26Bd8DF4eED52Fb79a6E",
+      "symbol": "JOY",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/joy.png"
+    },
+    {
       "name": "Knuth",
       "address": "0xc70c7718C7f1CCd906534C2c4a76914173EC2c44",
       "symbol": "KNUTH",
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/knuth.jpg"
+    },
+    {
+      "name": "Konra SEP20",
+      "address": "0x4F1480ba79F7477230ec3b2eCc868E8221925072",
+      "symbol": "KONRA",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/konra.jpg"
     },
     {
       "name": "LAWTOKEN",
@@ -164,6 +204,14 @@
       "decimals": 2,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/mgot.png"
+    },
+    {
+      "name": "MILK",
+      "address": "0xc8E09AEdB3c949a875e1FD571dC4b3E48FB221f0",
+      "symbol": "MILK",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/milk.png"
     },
     {
       "name": "MistToken",
@@ -260,6 +308,14 @@
       "decimals": 6,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/thewirelesstoken.png"
+    },
+    {
+      "name": "MISTbar",
+      "address": "0xc41c680c60309d4646379ed62020c534eb67b6f4",
+      "symbol": "xMIST",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/xmist.jpeg"
     },
     {
       "name": "ZOMBIE",
