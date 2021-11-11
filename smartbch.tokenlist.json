@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-11-10T06:12:47.460Z",
+  "timestamp": "2021-11-11T13:04:26.866Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 18
+    "patch": 19
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -348,6 +348,14 @@
       "decimals": 18,
       "chainId": 10001,
       "logoURI": "https://ipfs.io/ipfs/QmZx3XHnkYmaEGrpMgvzRjUcKXnmvNdqpYz9h9ySTwFDGm"
+    },
+    {
+      "name": "Content View Token",
+      "address": "0xd3063d326d528c614df2Ab23D0C1A2C701F839EA",
+      "symbol": "CVT",
+      "decimals": 18,
+      "chainId": 10001,
+      "logoURI": "https://zh.thedev.id/sep20tokens/assets/eye.png"
     },
     {
       "name": "Scaffold Token",
