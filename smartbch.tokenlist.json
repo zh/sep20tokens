@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-11-15T13:45:30.250Z",
+  "timestamp": "2021-11-17T11:29:50.892Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 20
+    "patch": 21
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -126,14 +126,6 @@
       "logoURI": "https://s3.ap-northeast-1.amazonaws.com/flexusd.com/wp-content/uploads/20201117112615/flexusd.png"
     },
     {
-      "name": "Flying High",
-      "address": "0x037BcD46Cdfc4ccf25eD9EbC31D09a9D09E06573",
-      "symbol": "FLY",
-      "decimals": 18,
-      "chainId": 10000,
-      "logoURI": "https://miro.medium.com/max/256/1*jZlsJuF_1mWqCMlcQP1DNw.png"
-    },
-    {
       "name": "HAM Token",
       "address": "0x252fd94f3Fb53D3D62F4FEc708501ACd59A57e52",
       "symbol": "HAM",
@@ -192,7 +184,7 @@
     {
       "name": "Lightning",
       "address": "0xc2100c9486B320B6db2Fc6D1f2BeAAB713fF069D",
-      "symbol": "LIGHTNING",
+      "symbol": "Lightning",
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/lightning.png"
@@ -228,14 +220,6 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/mist.jpeg"
-    },
-    {
-      "name": "MoonMoon",
-      "address": "0x039Bcd43B18A29aa72CabFe269BA045447C881E4",
-      "symbol": "MM",
-      "decimals": 18,
-      "chainId": 10000,
-      "logoURI": "https://i.gyazo.com/d77c3243caa5112d733ba4979ec51942.png"
     },
     {
       "name": "ORB",
@@ -324,6 +308,14 @@
       "decimals": 8,
       "chainId": 10000,
       "logoURI": "https://gateway.pinata.cloud/ipfs/QmR1nxmvGsxMQgDsZdNN6tc4WDVSRQnqnTPSuQjPQwNa1Z"
+    },
+    {
+      "name": "Wrapped BCH",
+      "address": "0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04",
+      "symbol": "WBCH",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/bch.svg"
     },
     {
       "name": "WRS Token",
