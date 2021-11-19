@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-11-17T11:29:50.892Z",
+  "timestamp": "2021-11-19T06:42:06.049Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 21
+    "patch": 22
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -188,6 +188,14 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/lightning.png"
+    },
+    {
+      "name": "LILY FLOWER",
+      "address": "0x5A0C102818d1EE4874d20eE035871bE259E353DD",
+      "symbol": "LILY",
+      "decimals": 18,
+      "chainId": 10000,
+      "logoURI": "https://i.postimg.cc/tCWX32wK/64.png"
     },
     {
       "name": "MAZE",
