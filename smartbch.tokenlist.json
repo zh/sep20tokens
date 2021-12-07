@@ -1,10 +1,10 @@
 {
   "name": "SmartBCH Tokens List",
-  "timestamp": "2021-11-30T03:54:14.175Z",
+  "timestamp": "2021-12-07T02:17:55.157Z",
   "version": {
     "major": 1,
     "minor": 0,
-    "patch": 23
+    "patch": 24
   },
   "tags": {},
   "logoURI": "ipfs://QmbBKPZyi1N3bkc5uywVRGagkHCLMiR8QX6Nh2CxWRDhsw",
@@ -244,6 +244,14 @@
       "decimals": 18,
       "chainId": 10000,
       "logoURI": "https://www.marketcap.cash/mist.jpeg"
+    },
+    {
+      "name": "MoonMoonMoonMoon",
+      "address": "0x2b591190ff951f60cb9424664155e57a402c1ade",
+      "symbol": "MoonMoonMoonMoon",
+      "decimals": 3,
+      "chainId": 10000,
+      "logoURI": "https://www.marketcap.cash/mmmm.jpeg"
     },
     {
       "name": "MrUSD",
